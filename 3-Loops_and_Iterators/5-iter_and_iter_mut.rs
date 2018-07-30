@@ -7,7 +7,6 @@ fn main() {
     }
 
     println!("{}", mylist[0]);
-    //             ^^^^^^ value used here after move
 
     for element in mylist.iter_mut() {
         // element is &mut i32

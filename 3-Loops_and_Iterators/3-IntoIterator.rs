@@ -1,8 +1,8 @@
 fn main() {
     let mylist = vec!(1, 2, 3, 4);
     
-    for element in mylist.into_iter() {
-    // .into_iter() can be omitted
+    for element in mylist {
+        // .into_iter() can be omitted
         println!("{}", element);
     }
 
