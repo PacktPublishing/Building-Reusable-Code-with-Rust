@@ -16,16 +16,17 @@ fn main() {
     // myrefcell.borrow_mut()
 
     // Thread-safe version
-    let myarc: Arc<i32> = Arc::new(42); // automic reference count, thread-safe Rc<T>
-    let mymutex: Mutex<i32> = Mutex::new(42); // automic reference count, thread-safe Rc<T>
+    let myarc: Arc<i32> = Arc::new(42); // atomic reference counted Rc<T>
+    let mymutex: Mutex<i32> = Mutex::new(42); 
     // mutex.lock()
-    let myrwlock: RwLock<i32> = RwLock::new(42); // automic reference count, thread-safe Rc<T>
+    let myrwlock: RwLock<i32> = RwLock::new(42);
     // myrwlock.lock()
 
     // composition examples:
-    // Rc<<RefCell<T>> 
+    // Rc<RefCell<T>> 
     // Rc<Vec<RefCell<T>>> 
     
-    // Reference: https://doc.rust-lang.org/book/first-edition/choosing-your-guarantees.html
+    // Reference: 
+    // https://doc.rust-lang.org/book/first-edition/choosing-your-guarantees.html
 }
 

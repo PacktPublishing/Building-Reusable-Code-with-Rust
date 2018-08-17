@@ -6,14 +6,7 @@ struct Point<T> {
 
 impl<T> Point<T> {
 //  ^^^      ^^^
-    fn x(&self) -> &T {
-        &self.x
-    }
-}
-
-
-impl Point<i32> {
-    fn x(&self) -> &i32 {
+    fn get_x(&self) -> &T {
         &self.x
     }
 }
@@ -21,5 +14,5 @@ impl Point<i32> {
 fn main() {
     let p = Point { x: 5, y: 10 };
 
-    println!("p.x = {}", p.x());
+    println!("p.x = {}", p.get_x());
 }

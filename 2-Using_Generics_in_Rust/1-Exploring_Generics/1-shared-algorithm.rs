@@ -1,5 +1,4 @@
 fn largest_i32(list: &[i32]) -> i32 {
-    list[0]
     let mut largest = list[0];
 
     for &item in list.iter() {
@@ -7,7 +6,6 @@ fn largest_i32(list: &[i32]) -> i32 {
             largest = item;
         }
     }
-
     largest
 }
 
@@ -19,7 +17,6 @@ fn largest_char(list: &[char]) -> char {
             largest = item;
         }
     }
-
     largest
 }
 
