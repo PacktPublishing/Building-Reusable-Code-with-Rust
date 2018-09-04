@@ -10,7 +10,7 @@ fn main() {
     let x = String::from("hello");
 
     let return_x = move || x; // A closure that consumes x and returns it directly
-    // FnOnce are automatically implemented for clouse  that might consume captured variables
+    // FnOnce are automatically implemented for clouse that might consume captured variables
     consuming_call(return_x)
 }
 

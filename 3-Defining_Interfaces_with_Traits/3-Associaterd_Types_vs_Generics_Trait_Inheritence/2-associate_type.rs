@@ -1,5 +1,5 @@
 trait Iterator {
-    type Item; // <= associate type
+    type Item; // <= associated type
 
     fn next(&mut self) -> Option<Self::Item>; // <= used here
 }
@@ -15,15 +15,14 @@ impl Iterator for Counter {
     }
 }
 
-/* Can't be re-defined
 impl Iterator for Counter {
     type Item = String;
+
     fn next(&mut self) -> Option<Self::Item> {
         // Just for demo
         Some("42".to_string())
     }
 }
-*/
 
 fn main() {
     let mut counter = Counter {};

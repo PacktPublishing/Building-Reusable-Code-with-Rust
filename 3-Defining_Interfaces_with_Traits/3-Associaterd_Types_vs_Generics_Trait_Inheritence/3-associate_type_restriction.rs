@@ -1,7 +1,7 @@
 use std::fmt;
 
 trait Iterator {
-    type Item: fmt::Display; // <= associate type
+    type Item: fmt::Display; // <= associated type
 
     fn next(&mut self) -> Option<Self::Item>; // <= used here
 }

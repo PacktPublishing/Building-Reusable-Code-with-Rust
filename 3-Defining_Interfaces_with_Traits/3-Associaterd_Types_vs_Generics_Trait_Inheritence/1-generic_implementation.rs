@@ -6,15 +6,13 @@ struct Counter;
 
 impl Iterator<u32> for Counter {
     fn next(&mut self) -> Option<u32> {
-        // Just for demo
-        Some(42)
+        // Implement here
     }
 }
 
 impl Iterator<String> for Counter {
     fn next(&mut self) -> Option<String> {
-        // Just for demo
-        Some("42".to_string())
+        // Implement here
     }
 }
 

@@ -1,4 +1,3 @@
-
 #[derive(Debug)] // ignore this for now
 struct MyStruct;
 
