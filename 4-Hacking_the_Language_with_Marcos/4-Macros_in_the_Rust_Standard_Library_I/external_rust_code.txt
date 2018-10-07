@@ -1,1 +1,1 @@
-["i", "can", "haz", "cheezburger"].join("")
+["one", "very", "long", "string"].join("")

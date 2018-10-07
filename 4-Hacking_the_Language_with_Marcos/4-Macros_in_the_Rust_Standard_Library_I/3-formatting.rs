@@ -16,6 +16,6 @@ fn main() {
 
     let s_format: String = format!("Print to a Stirng with parameter: {}", "foo");
     println!("{}", s_format);
-    let s_concat: &str = concat!("i", "can", "haz", "cheezburger");
-    println!("{}", s_concat); // icanhazcheezburger
+    let s_concat: &str = concat!("one", "very", "long", "string");
+    println!("{}", s_concat); // oneverylongstring
 }
