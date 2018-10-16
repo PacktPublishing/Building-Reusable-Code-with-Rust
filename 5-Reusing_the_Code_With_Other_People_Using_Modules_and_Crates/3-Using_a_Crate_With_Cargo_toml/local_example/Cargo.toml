@@ -1,0 +1,7 @@
+[package]
+name = "local_example"
+version = "0.1.0"
+authors = ["Shing Lyu <shing.lyu@gmail.com>"]
+
+[dependencies]
+animal = { path = "../animal" }

@@ -9,3 +9,11 @@ mod animal {
         fn bark(){}
     }
 }
+
+/*
+animal::move_around()
+
+animal::cat::meow()
+
+animal::dog::bark()
+*/
